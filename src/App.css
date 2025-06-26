@@ -1,0 +1,46 @@
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: hsl(174, 26%, 93%);
+}
+
+.header {
+  background: hwb(212 15% 79%);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+   margin: 0 auto; /* Centers the content */
+  max-width: 900px; /* Adjust as needed */
+  background: #e5edee;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center; /* Centers text inside */
+
+}
+
+.h1 {
+  color: #007bff;
+  text-align: center;
+}
+
+ul {
+  padding-left: 20px;
+}
