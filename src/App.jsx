@@ -8,9 +8,25 @@ import CoursesPage from './pages/CoursesPage';
 
 import NotFoundPage from './pages/NotFoundPage';
 import ChatbotComponent from './components/Chatbot/ChatbotComponent';
+import DeveloperInfoPopup from './components/DeveloperInfo/DeveloperInfoPopup';
 function App() {
+  const [showPopup, setShowPopup] = useState(true);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <>
+    <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Snehal Ranjit Patil"
+          studentPhotoUrl="/images/images.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
     <div>
         
       </div>
